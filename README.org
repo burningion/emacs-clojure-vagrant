@@ -1,21 +1,21 @@
-* Vagrant setup for Seajure hack nights.
-As an attempt to get a reasonable development environment quickly for Seajure hacknights, I setup a shareable virtualbox via Vagrant. Let's all play along!
+* Vagrant setup for Clojure Web Development Hacking.
+As an attempt to get a reasonable development environment quickly for hacking Clojure web development. It's based off work from
+Seajure hacknights.
 ** Setup
    - Install [[http://www.virtualbox.org/wiki/Downloads][VirtualBox 4.x]]
    - Install [[http://download.virtualbox.org/virtualbox/4.0.8/Oracle_VM_VirtualBox_Extension_Pack-4.0.8-71778.vbox-extpack][VirtualBox Extension Pack]]
    - =gem install vagrant= # install rubygems first if necessary
    - =vagrant up= # inside the directory containing this readme
 ** Usage
-   Once Vagrant provisions your VM, use =vagrant ssh= to log in. Your
-   VM will have a Jark swank session running, so you can immediately
-   start Emacs and do =M-x slime-connect= to port 4005. You can start
-   a new project with =lein new myproject= or pull down an existing
-   project to hack on via git.
+   Once Vagrant provisions your VM, use =vagrant ssh= to log in.
+   Vagrant installs and exposes PostgreSQL on port 6666 on the host machine, with a username / password of postgres / postgres.
+   Use emacs24 and install everything you want. I'm working on incorporating jark with the next release.
+
 ** Contents
    - Emacs 24 (with starter kit 2 and relevant Clojure modes)
    - tmux (with better config)
    - [[http://github.com/technomancy/leiningen][Leiningen]]
-   - [[http://icylisper.in/jark/][Jark]]
+   - [[http://www.postgresql.com][PostgreSQL]]
 ** Troubleshooting
    A standard Ubuntu 10.04 install (YMMV for other distros/versions) doesn't have the appropriate ruby setup and needs
    some additional =apt-get=-ing to install vagrant. Assuming only that VirtualBox is installed, the following additional
