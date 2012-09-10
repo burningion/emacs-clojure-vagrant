@@ -7,7 +7,8 @@ sudo apt-get install -y python-software-properties
 sudo add-apt-repository ppa:cassou/emacs
 sudo apt-get update
 sudo apt-get install -y emacs-snapshot emacs-snapshot-el git-core rlwrap openjdk-6-jdk tmux \
-    curl tree unzip
+    curl tree unzip build-essential imagemagick libxml2 libxslt-dev libsqlite3-dev sqlite \
+    nodejs npm nodejs-dev
 
 # dotfiles
 mkdir -p ~/bin/
