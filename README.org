@@ -16,6 +16,7 @@ Seajure hacknights.
    - tmux (with better config)
    - [[http://github.com/technomancy/leiningen][Leiningen]]
    - [[http://www.postgresql.com][PostgreSQL]]
+   - Chef
 ** Troubleshooting
    A standard Ubuntu 10.04 install (YMMV for other distros/versions) doesn't have the appropriate ruby setup and needs
    some additional =apt-get=-ing to install vagrant. Assuming only that VirtualBox is installed, the following additional
